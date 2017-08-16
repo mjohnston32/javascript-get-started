@@ -3,9 +3,9 @@
 	"version": "0.0.1",
 	"description": "",
 	"scripts": {
-		"prestart": "node buildScripts/startMessage.js",
+		"prestart": "babel-node buildScripts/startMessage.js",
 		"start" : "npm-run-all --parallel security-check run-web",
-		"run-web" : "node buildScripts/srcServer.js",
+		"run-web" : "babel-node buildScripts/srcServer.js",
 		"security-check" : "nsp check"
 	},
 	"author": "Matt Johnston",
